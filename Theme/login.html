@@ -9,7 +9,7 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="./formstyle.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
    <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    <!-- Compiled and minified JavaScript -->
@@ -28,25 +28,28 @@
        $('.tooltipped').tooltip();
        $('.scrollspy').scrollSpy();
        $('select').formSelect();
+       $(document).ready(function(){
+       $('.collapsible').collapsible();
+       });
+       $("#Button").click(function(){
+        $(this).toggleClass("my");
+    });
      })
    </script>
   </head>
   <body>
-    <div class="demo" >
+    <!-- <div class="demo" >
    <div class="content">
       <div id="large-header" class="large-header">
-         <canvas id="demo-canvas"></canvas></div></div></div>
-<div class="main">
-      <nav class="nav-wrapper transparent">
+         <canvas id="demo-canvas"></canvas></div></div></div> -->
+    <div class="main">
+
+      <nav class="nav-wrapper white">
+        <!-- <div class="container"> -->
           <a href="#" class="brand-logo" id="nav-logo"><i class="fas fa-code"></i> Dev Connector</a>
-          <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="#photos">Developers</a></li>
-            <li><a href="#services">Register</a></li>
-            <li><a href="#contact">Login</a></li>
-          </ul>
+          <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large right"><i class="material-icons">menu</i></a>
       </nav>
-      <ul id="slide-out" class="sidenav" style="background-color:black;">
+      <ul id="slide-out" class="sidenav" >
           <li class="collection-item Si">
             <i class="material-icons circle blue white-text" id="face">lock</i> Login
           </li>
@@ -54,13 +57,13 @@
             <i class="material-icons circle blue white-text" id="face">people</i> Developers
           </li>
           <li class="collection-item Si">
-            <i class="material-icons circle blue white-text" id="face" style="font-size:1.2rem">create</i> Register
+            <i class="material-icons circle blue white-text" id="face">create</i> Register
           </li>
         </ul>
  <div class="center">
       <div class="container" id="SI">
         <h2 class="purple-text" style="">Sign In</h2>
-        <h4> <i class="material-icons ep" style="font-size:2.2rem;">person</i>Login to your account</h1>
+        <h4> <i class="material-icons ep">person</i>Login to your account</h1>
       </div>
 <form class="" action="index.html" method="post">
         <div class="row">
@@ -70,7 +73,7 @@
             <i class="material-icons prefix">email</i>
             <input type="email" id="email">
             <label for="email">Your Email</label>
-            <span style="color:grey">This site uses Gravatar so if you want a profile image, use a Gravatar email</span>
+            <span >This site uses Gravatar so if you want a profile image, use a Gravatar email</span>
           </div>
           <div class="input-field">
             <i class="material-icons prefix">lock</i>
@@ -86,11 +89,11 @@
 </form>
 </div>
   </div>
-  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js">
+  <!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js">
   </script>
   <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js">
   </script>
   <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js">
-  </script>
+  </script> -->
 </body>
 </html>

@@ -11,7 +11,25 @@
   <!-- CSS  -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="./style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../formstyle.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.slider').slider({
+      fullWidth:true,
+      indicators:false,
+      height:500,
+      interval:6000
+    });
+    $('.sidenav').sidenav();
+    $('.parallax').parallax();
+    $('.materialbox').materialbox();
+    $('.tabs').tabs();
+    $('.datepicker').datepicker();
+    $('.tooltipped').tooltip();
+    $('.scrollspy').scrollSpy();
+    $('select').formSelect();
+  })
+</script>
 </head>
 <body>
   <!-- navbar -->
@@ -109,76 +127,6 @@
   </div>
 
 <!-- section3: clients-->
-<div class="blogs">
-  <h3 class="center">Latest Blogs</h3>
-      <br>
-  <div class="row">
-    <div class="col s12 m6 l3">
-      <div class="card">
-        <div class="card-image">
-          <img src="./images/slider3.jpg">
-          <span class="card-title">Card Title</span>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col s12 m6 l3">
-      <div class="card">
-        <div class="card-image">
-          <img src="./images/slider3.jpg">
-          <span class="card-title">Card Title</span>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col s12 m6 l3">
-      <div class="card">
-        <div class="card-image">
-          <img src="./images/slider3.jpg">
-          <span class="card-title">Card Title</span>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col s12 m6 l3">
-      <div class="card">
-        <div class="card-image">
-          <img src="./images/slider3.jpg">
-          <span class="card-title">Card Title</span>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-        </div>
-      </div>
-    </div>
-  </div>
-    </div>
-    <br><br><br>
 
     <!--form -->
 

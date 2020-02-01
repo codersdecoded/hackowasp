@@ -1,14 +1,41 @@
+.sidenav{
+  background-color:white;
+}
+#nav-logo{
+  color: #039be5!important;
+}
+.sidenav-trigger i{
+  color:#039be5!important;
+}
 .loader {
   position: absolute;
   top: 40%;
   left: 47%;
 }
-
+#CYP i{font-size:2.2rem;}
+#sif{padding-bottom:1.5rem;font-size:1.5rem;}
+#SI i{font-size:1.2rem}
+#hu{
+  padding-bottom:1.5rem;font-size:1.5rem;
+}
+#g{padding:15px 0px 15px 15px;}
+#supr{margin: 2.52rem 0 1.912rem 0;}
 .login {
   margin-top: 70px;
   margin-bottom: 70px;
 }
-
+#defs{margin:10px auto;}
+#defs button{margin:10px auto}
+#buf{padding:40px 0 40px 0;}
+#buf h2{margin:0 0 0 0;padding-bottom:10px}
+#buf h5{padding-bottom:0px}
+#buf p{padding-bottom:10px}
+#ch{background-color:#f4f4f4;padding:40px 0 40px 0;}
+#ch ul{display:flex;justify-content:center;margin:20px auto}
+#ch divider{width:75%;margin:40px auto}
+#madar{margin:20px auto}
+#set{border: #ccc solid 1px; padding:10px;}
+#seet{border: #ccc solid 1px; padding:10px;}
 .btn-extended {
   display: block;
   width: 80%;
@@ -48,8 +75,7 @@ html,body{
   background-image: url('https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/img/demo-1-bg.jpg');
 }
 body{
-  background-color: black;
-  color:white!important;
+  color:black;
 }
 .selectinput{
   color:white!important;
@@ -64,17 +90,17 @@ body{
   color:red!important;
 }
 input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=password]:not(.browser-default):focus:not([readonly])+label, input[type=email]:not(.browser-default):focus:not([readonly])+label{
-  color:white!important;
+  color:#039be5!important;
 }
 .input-field input[type]:focus, .materialize-textarea:focus:not([readonly]) {
-border-bottom: 1px solid white !important;
-box-shadow: 0 1px 0 0 white !important;
+border-bottom: 1px solid #039be5!important;
+box-shadow: 0 1px 0 0 #039be5!important;
 }
 textarea.materialize-textarea:focus:not([readonly]){
-  color:white!important;
+  color:#039be5!important;
 }
 textarea.materialize-textarea:focus:not([readonly])+label{
-  color:white!important;
+  color:#039be5!important;
 }
 .collapsible li{
   color:black!important;
@@ -115,10 +141,14 @@ textarea.materialize-textarea:focus:not([readonly])+label{
     vertical-align:middle;
     display:inline-block;
 }
-.ep{
+.lead.c2{
+  padding-left:3%;
+}
+i.ep{
     text-align:center;
     vertical-align:middle;
     display:inline-block;
+    font-size:2.2rem;
 }
 #face{
   width: 30px;
@@ -129,7 +159,7 @@ textarea.materialize-textarea:focus:not([readonly])+label{
   display:inline-block;
   font-size: 1.5rem
 }
-#person { line-height: inherit;font-size: 4rem;color:blue}
+#person { line-height: inherit;font-size: 4rem;color:white!important}
 .start{
   padding-top: 4%;
   left:-50px;
@@ -167,7 +197,7 @@ textarea.materialize-textarea:focus:not([readonly])+label{
   color: black!important;
 }
 input{
-  color:white!important;
+  color:#039be5!important;
 }
 label{
   font-size:1.2rem!important;
