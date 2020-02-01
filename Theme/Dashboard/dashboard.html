@@ -31,19 +31,16 @@
           <li class="active">
             <a href="index.html">Dashboard</a>
           </li>
-          <li>
-            <a href="users.html"><i class="material-icons">logout</i></a>
-          </li>
         </ul>
         <!-- Side nav -->
         <ul id="side-nav" class="side-nav">
           <li>
             <div class="user-view">
               <div class="background">
-                <img src="img/ocean.jpg" alt="">
+                <img src="images/office.jpg" alt="">
               </div>
               <a href="#">
-                <img src="img/person1.jpg" alt="" class="circle">
+                <img src="images/26268.jpg" alt="" class="circle">
               </a>
               <a href="#">
                 <span class="name white-text">John Doe</span>
@@ -61,13 +58,7 @@
             <a href="posts.html">Posts</a>
           </li>
           <li>
-            <a href="categories.html">Categories</a>
-          </li>
-          <li>
-            <a href="comments.html">Comments</a>
-          </li>
-          <li>
-            <a href="users.html">Users</a>
+            <a href="categories.html">Developers</a>
           </li>
           <li>
             <div class="divider"></div>
@@ -76,7 +67,13 @@
             <a class="subheader">Account Controls</a>
           </li>
           <li>
-            <a href="login.html" class="waves-effect">Logout</a>
+            <a href="login.html" class="waves-effect">Add Education<i class="material-icons secondary-contet">edit</i></a>
+          </li>
+          <li>
+            <a href="login.html" class="waves-effect">Add Experience<i class="material-icons secondary-contet">edit</i></a>
+          </li>
+          <li>
+            <a href="login.html" class="waves-effect">Logout<i class="material-icons secondary-contet">logout</i></a>
           </li>
         </ul>
       </div>
@@ -223,12 +220,18 @@
 
                  <ul class="collection">
                     <li class="collection-item avatar">
-                      <img src="images/yuna.jpg" alt="" class="circle">
+                      <img src="images/office.jpg" alt="" class="circle">
                       <label for="tt">Company</label>
-                      <span class="title" id="tt">Title</span>
-                      <p>First Line <br>
-                         Second Line
-                      </p></li>
+                      <span class="title" id="tt">Title</span><br>
+                      <label for="fl">Post</label>
+                      <span id="fl">Post</span><br>
+                         <label for="yr">Years</label>
+                         <span id="yr">Years
+                      </span>
+                      <a href="#" class="secondary-content">
+                       <i class="material-icons black-text">delete</i>
+                      </a>
+                    </li>
                   </ul>
 
           </div>
@@ -239,13 +242,19 @@
 
          <ul class="collection">
             <li class="collection-item avatar">
-              <img src="images/yuna.jpg" alt="" class="circle">
+              <img src="images/office.jpg" alt="" class="circle">
               <label for="tt">Company</label>
-              <span class="title" id="tt">Title</span>
-              <p>First Line <br>
-                 Second Line
-              </p></li>
-                        </ul>
+              <span class="title" id="tt">Title</span><br>
+              <label for="fl">Post</label>
+              <span id="fl">Post</span><br>
+                 <label for="yr">Years</label>
+                 <span id="yr">Years
+              </span>
+              <a href="#" class="secondary-content">
+               <i class="material-icons black-text">delete</i>
+              </a>
+            </li>
+          </ul>
 
   </div>
 </div>
@@ -314,13 +323,13 @@
         </a>
       </li>
       <li>
-        <a href="#category-modal" class="tooltipped modal-trigger btn-floating blue" data-tooltip="">
+        <a href="#category-modal" class="tooltipped modal-trigger btn-floating blue" data-tooltip="Add Course">
           <i class="material-icons">folder</i>
         </a>
       </li>
       <li>
-        <a href="#user-modal" class="tooltipped modal-trigger btn-floating blue" data-tooltip="">
-          <i class="material-icons">supervisor_account</i>
+        <a href="#user-modal" class="tooltipped modal-trigger btn-floating blue" data-tooltip="Add Blog">
+          <i class="material-icons">description</i>
         </a>
       </li>
     </ul>
