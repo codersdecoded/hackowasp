@@ -1,0 +1,199 @@
+.loader {
+  position: absolute;
+  top: 40%;
+  left: 47%;
+}
+
+.login {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.btn-extended {
+  display: block;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: 1;
+}
+.main{
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.main1 .SI{
+  position: absolute;
+
+  bottom: 50%;
+  width: 100%;
+}
+#canvas{
+  position: relative;
+  height:1280px!important;
+  max-width: 100%;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+#land{
+  background-image: url('https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/img/demo-1-bg.jpg');
+}
+body{
+  background-color: black;
+  color:white!important;
+}
+.selectinput{
+  color:white!important;
+}
+#login-page {
+   width: 500px;
+}
+.datepicker-day-button{
+  color:black!important;
+}
+.is-disabled{
+  color:red!important;
+}
+input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=password]:not(.browser-default):focus:not([readonly])+label, input[type=email]:not(.browser-default):focus:not([readonly])+label{
+  color:white!important;
+}
+.input-field input[type]:focus, .materialize-textarea:focus:not([readonly]) {
+border-bottom: 1px solid white !important;
+box-shadow: 0 1px 0 0 white !important;
+}
+textarea.materialize-textarea:focus:not([readonly]){
+  color:white!important;
+}
+textarea.materialize-textarea:focus:not([readonly])+label{
+  color:white!important;
+}
+.collapsible li{
+  color:black!important;
+}
+.cont {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+.card {
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     -moz-transform: translate(-50%, -50%)
+     -webkit-transform: translate(-50%, -50%)
+     -ms-transform: translate(-50%, -50%)
+     -o-transform: translate(-50%, -50%)
+     transform: translate(-50%, -50%);
+}
+.exp{
+    width:80px;
+    height:80px;
+    background-color:white;
+    border-radius:100%;
+    line-height:80px;
+    text-align:center;
+    vertical-align:middle;
+    display:inline-block;
+}
+.expsi{
+    width:50px;
+    height:50px;
+    background-color:white;
+    border-radius:100%;
+    line-height:50px;
+    text-align:center;
+    vertical-align:middle;
+    display:inline-block;
+}
+.ep{
+    text-align:center;
+    vertical-align:middle;
+    display:inline-block;
+}
+#face{
+  width: 30px;
+  height: 30px;
+  line-height:30px;
+  text-align:center;
+  vertical-align:middle;
+  display:inline-block;
+  font-size: 1.5rem
+}
+#person { line-height: inherit;font-size: 4rem;color:blue}
+.start{
+  padding-top: 4%;
+  left:-50px;
+}
+.container{
+  overflow:hidden;
+}
+@media (max-width: 576px) {
+  #nav-logo{
+    font-size: 1.2rem;
+  }
+  #CYP h2{
+    font-size:2.5rem ;
+  }
+  #CYP h4{
+    font-size:1.4rem;
+  }
+}
+@media(max-width :425px){
+  .SI h1{
+    font-size: 2rem;
+  }
+  .SI h5{
+    font-size: 1rem;
+  }
+
+}
+
+@media (min-width: 1024px){
+  #nav-logo{
+    left:2%
+  }
+}
+.dropdown-content li>a, .dropdown-content li>span{
+  color: black!important;
+}
+input{
+  color:white!important;
+}
+label{
+  font-size:1.2rem!important;
+}
+.Si{
+  padding-left:5%!important
+}
+.collection li{
+  color: black!important;
+  border: none!important;
+}
+button:focus{
+  background-color: white!important;
+}
+ul.collection{
+  border:none!important;
+}
+.collapsible{
+  border:none!important;
+}
+.collapsible-header{
+  border-radius: 15px;
+}
+.collapsible-body{
+  background-color: white;
+}
+.my{
+  border-radius: 0!important;
+}

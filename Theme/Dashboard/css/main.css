@@ -1,0 +1,47 @@
+@media (min-width: 1024px){
+  .brand-logo{
+    left:2%
+  }
+}
+@media (max-width: 576px) {
+  .brand-logo{
+    font-size: 1.2rem!important;
+  }
+}
+#td{
+  font-size: 24px;
+}
+div.viewport-wrapper{
+  padding: 0 0 0 0!important;
+}
+div.viewport {
+            box-sizing: border-box ;
+            height: 300px ;
+            overflow: auto ;
+            position: relative;
+        }
+        div.tdo {
+                    box-sizing: border-box ;
+                    height: 139px ;
+                    overflow: auto ;
+                }
+div.viewport .row .col{
+  padding: 0 0!important;
+}
+.loader {
+  position: absolute;
+  top: 40%;
+  left: 47%;
+}
+
+.login {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.btn-extended {
+  display: block;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}

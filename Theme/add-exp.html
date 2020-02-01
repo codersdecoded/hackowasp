@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Materialize</title>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="./formstyle.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+   <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <script>
+     $(document).ready(function(){
+       $('.sidenav').sidenav();
+       $('.parallax').parallax();
+       $('.materialbox').materialbox();
+       $('.tabs').tabs();
+       $('.datepicker').datepicker();
+       $('.tooltipped').tooltip();
+       $('.scrollspy').scrollSpy();
+       $('select').formSelect();
+     })
+   </script>
+  </head>
+  <body>
+    <div class="demo" >
+   <div class="content">
+      <div id="large-header" class="large-header">
+         <canvas id="demo-canvas"></canvas></div></div></div>
+    <div class="main">
+      <nav class="nav-wrapper transparent">
+        <!-- <div class="container"> -->
+          <a href="#" class="brand-logo" id="nav-logo"><i class="fas fa-code"></i> Dev Connector</a>
+          <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#photos">Developers</a></li>
+            <li><a href="#services">Post</a></li>
+            <li><a href="#contact">Dashboard</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+      </nav>
+      <ul id="slide-out" class="sidenav">
+        <li><div class="user-view">
+          <div class="background">
+            <img src="./office.jpg">
+          </div>
+          <div class="exp"><i class="material-icons" id="person">person</i></div>
+          <a href="#name"><span class="white-text name">John Doe<a href="#" class="secondary-content">
+            <i class="material-icons white-text">logout</i>
+          </a></span></a>
+          <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+        </div></li>
+        <ul class="collection">
+          <li class="collection-item">
+            <i class="material-icons circle blue white-text" id="face">face</i> Dashboard
+          </li>
+          <li class="collection-item">
+            <i class="material-icons circle blue white-text" id="face">people</i> Developers
+          </li>
+          <li class="collection-item">
+            <i class="material-icons circle blue white-text" id="face" style="font-size:1.2rem">message</i> Posts
+          </li>
+        </ul>
+      </ul>
+
+
+        <div class="container" id="CYP">
+          <h2 class="purple-text" style="">Add an Experience</h2>
+          <h5> <i class="fas fa-code-branch" style="font-size:2.2rem;"></i>Add any developer/programming positions that you have had in the past</h5>
+        </div>
+        <br>
+        <div class="section">
+          <div class="container">
+            <span class="lead c2" style="padding-left:3%;">* = required field</span>
+          </div>
+          <form class="" action="index.html" method="post">
+          <div class="row">
+            <div class="input-field col xs12 s12 m4 offset-m1 offset-l2 white-text">
+              <input id="job" type="text" class="">
+              <label for="job">Job Title</label>
+            </div>
+          </div>
+      <div class="row">
+        <div class="input-field col s12 m4 offset-m1 offset-l2 white-text">
+          <input id="company" type="text" class="active">
+          <label for="company">Company</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col xs12 s12 m4 offset-m1 offset-l2 white-text">
+          <input id="location" type="text" class="" style="">
+          <label for="location">Location</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col xs12 s12 m3 l2 offset-l2">
+            <i class="material-icons prefix">date_range</i>
+          <input type="text" id="date" class="datepicker">
+          <label for="date">From Date</label>
+        </div>
+        <div class="input-field col xs12 s12 m3 l2">
+          <i class="material-icons prefix">date_range</i>
+          <input type="text" id="date" class="datepicker">
+          <label for="date">To Date</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col xs12 s12 m4 offset-m1 offset-l2">
+          <label>
+            <input type="checkbox">
+            <span style="padding-bottom:1.5rem;font-size:1.5rem;">Current Job</span>
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col xs12 s12 m4 offset-m1 offset-l2 white-text">
+          <textarea id="bio" type="text" class="materialize-textarea"></textarea>
+          <label for="bio">Job Description</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col xs6 s6 m4 offset-m1 offset-l2 white-text">
+          <button class="btn waves-effect waves-light purple darken-2" type="submit" name="action" >Submit
+            <i class="material-icons right">send</i>
+          </button>
+        </div>
+          <div class="input-field col xs6 s6 m4 pull-m2">
+          <button class="btn waves-effect white black-text" type="submit" name="action" >
+            <i class="fas fa-arrow-left" ></i><span> Go Back</span>
+          </button>
+        </div>
+      </div>
+    </form>
+    </div>
+      </div>
+      <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js">
+      </script>
+      <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js">
+      </script>
+      <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js">
+      </script>
+    </body>
+    </html>
