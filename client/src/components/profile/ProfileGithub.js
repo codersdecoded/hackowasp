@@ -13,32 +13,38 @@ const ProfileGithub = ({ repos, getGithubRepos, username }) => {
     }, [getGithubRepos, username]);
 
     return (
-        <div class="profile-github">
+        <div class="">
 
-            <h2 class="text-primary my-1">
-                <i class="fab fa-github"></i> Github Repos
-          </h2>
+            <div class="container">
 
-            {repos === null ? <Spinner /> : (
-                repos.map(repo => (
-                    <div key={repo._id} class="repo bg-white p-1 my-1">
-                        <div>
-                            <h4><a href={repo.html_url} target="_blank"
-                                rel="noopener noreferrer">{repo.name}</a></h4>
-                            <p>
-                                {repo.description}
-                            </p>
+                <h3><i class="fab fa-github"></i>Github Repositories</h3>
+
+            </div>
+            <div class="" id="gt">
+                {repos === null ? <Spinner /> : (
+                    repos.map(repo => (
+                        <div key={repo._id} class="row">
+                            <div class="col s9 m9 l10">
+                                <h4><a href={repo.html_url} target="_blank"
+                                    rel="noopener noreferrer">{repo.name}</a></h4>
+                                <p>
+                                    {repo.description}
+                                </p>
+                            </div>
+                            <div class="col s3 m3 l2">
+                                <ul>
+                                    <li class="badge blue white-text">Stars: {repo.stargazers_count}</li>
+                                    <li class="badge blue white-text">Watchers: {repo.watchers_count}</li>
+                                    <li class="badge blue white-text">Forks: {repo.forks_count}</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div>
-                            <ul>
-                                <li class="badge badge-primary">Stars: {repo.stargazers_count}</li>
-                                <li class="badge badge-dark">Watchers: {repo.watchers_count}</li>
-                                <li class="badge badge-light">Forks: {repo.forks_count}</li>
-                            </ul>
-                        </div>
-                    </div>
-                ))
-            )}
+                    ))
+                )}
+
+
+            </div>
+
         </div>
 
     )

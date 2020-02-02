@@ -6,47 +6,84 @@ import { logout } from '../../actions/authaction'
 const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
 
     const authLinks = (
-        <ul>
-            <li><Link to="/profiles">
-                Developers
-            </Link> </li>
 
-            <li><Link to="/posts">
-                Posts
-            </Link> </li>
-            <li><Link to="/dashboard">
-                <i className="fas fa-user"></i>
-                <span className="hide-sm">Dashboard</span>
-            </Link> </li>
+        <div>
+            <li><div className="user-view">
+                <div className="background">
+                    <img src="" />
+                </div>
+                <div className="exp"><i className="material-icons" id="person">person</i></div>
+                <Link href="#name"><span className="white-text name">John Doe</span></Link>
+                <Link href="#email"><span className="white-text email">jdandturk@gmail.com</span></Link>
+            </div></li>
+            <ul className="collection" >
+                <li className="collection-item">
+                    <Link to="/dashboard"><i className="material-icons circle blue white-text" id="face">face</i> Dashboard</Link>
+                </li>
+                <li className="collection-item">
+                    <Link to="/profiles"><i className="material-icons circle blue white-text" id="face">people</i> Developers</Link>
+                </li>
+                <li className="collection-item">
+                    <Link to='/posts'><i className="material-icons circle blue white-text" id="face">people</i>Posts</Link>
+                </li>
+                <li className="collection-item">
+                    <Link to='#' onClick={logout} >Logout</Link>
+                </li>
+            </ul>
+        </div>
 
-            <li><a onClick={logout} href="#!">
-                <i className="fas fa-sign-out-alt"></i>
-                <span className="hide-sm">Logout</span>
-            </a></li>
-        </ul>
     );
     const guestLinks = (
-        <ul>
-            <li><Link to="/profiles">
-                Developers
-            </Link> </li>
+        <div>
+            <ul className="collection" >
+                <li className="collection-item">
+                    <Link to="/dashboard"><i className="material-icons circle blue white-text" id="face">face</i> Dashboard</Link>
+                </li>
+                <li className="collection-item">
+                    <Link to="/profiles"><i className="material-icons circle blue white-text" id="face">people</i> Developers</Link>
+                </li>
+                <li className="collection-item">
+                    <Link to='/posts'><i className="material-icons circle blue white-text" id="face">people</i>Posts</Link>
+                </li>
+                <li className="collection-item">
+                    <Link to='#' onClick={logout} >Logout</Link>
+                </li>
+            </ul>
 
-
-            <li><Link to="/register">Register</Link></li>
-            <li><Link to="/login">Login</Link></li>
-        </ul>
+        </div>
     );
 
 
 
     return (
 
-        <nav className="navbar bg-dark">
+        <div>
+
+            <nav className="nav-wrapper white">
+
+                <Link to="/" className="brand-logo" id="nav-logo"><i className="fas fa-code"></i> Dev Connector</Link>
+                <Link to="#" data-target="slide-out" className="sidenav-trigger show-on-large right"><i className="material-icons">menu</i></Link>
+            </nav>
+            <ul id="slide-out" className="sidenav">
+                {!loading && (<div>{isAuthenticated ? (authLinks) : guestLinks}</div>)}
+            </ul>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        /* <nav classNameName="navbar bg-dark">
             <h1>
-                <Link to="/"><i className="fas fa-code"></i> DevConnector</Link>
+                <Link to="/"><i classNameName="fas fa-code"></i> DevConnector</Link>
             </h1>
             {!loading && (<div>{isAuthenticated ? authLinks : guestLinks}</div>)}
-        </nav>
+        </nav> */
 
     )
 }

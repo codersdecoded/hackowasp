@@ -6,16 +6,14 @@ const ProfileExperience = ({ experience: { company, title, location, to, from, d
 
     return (
         <div>
-            <h3 class="text-dark">{company}</h3>
+            <h5>{company}</h5>
             <Moment format='YYYY/MM/DD'>{from}</Moment> --{!to ? ('Now') : <Moment format='YYYY/MM/DD'>{to}</Moment>}
-            <p><strong>Position: </strong>{title}</p>
-            <p>
-                <strong>Description: </strong>{description}
-            </p>
+            <p><strong>{title}</strong></p>
+            <p><strong>{description}</strong></p>
         </div>
 
     )
 
 }
 
-export default ProfileExperience;
+export default ProfileExperience; 

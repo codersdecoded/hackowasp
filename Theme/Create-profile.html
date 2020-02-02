@@ -1,89 +1,97 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Materialize</title>
-    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="./formstyle.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-   <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   <!-- Compiled and minified JavaScript -->
-   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-   <script>
-     $(document).ready(function(){
-       $('.sidenav').sidenav();
-       $('.parallax').parallax();
-       $('.materialbox').materialbox();
-       $('.tabs').tabs();
-       $('.datepicker').datepicker({
-         disableWeekends:true
-       });
-       $('.tooltipped').tooltip();
-       $('.scrollspy').scrollSpy();
-       $('select').formSelect();
-       $(document).ready(function(){
-       $('.collapsible').collapsible();
-       });
-       $("#Button").click(function(){
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Materialize</title>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="./formstyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.sidenav').sidenav();
+      $('.parallax').parallax();
+      $('.materialbox').materialbox();
+      $('.tabs').tabs();
+      $('.datepicker').datepicker({
+        disableWeekends: true
+      });
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy();
+      $('select').formSelect();
+      $(document).ready(function () {
+        $('.collapsible').collapsible();
+      });
+      $("#Button").click(function () {
         $(this).toggleClass("my");
-    });
-     })
-   </script>
-  </head>
-  <body>
-    <!-- <div class="demo" >
+      });
+    })
+  </script>
+</head>
+
+<body>
+  <!-- <div class="demo" >
    <div class="content">
       <div id="large-header" class="large-header">
          <canvas id="demo-canvas"></canvas></div></div></div> -->
-    <div class="main">
+  <div class="main">
 
-      <nav class="nav-wrapper white">
-        <!-- <div class="container"> -->
-          <a href="#" class="brand-logo" id="nav-logo"><i class="fas fa-code"></i> Dev Connector</a>
-          <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large right"><i class="material-icons">menu</i></a>
-      </nav>
-      <ul id="slide-out" class="sidenav">
-        <li><div class="user-view">
+    <nav class="nav-wrapper white">
+      <!-- <div class="container"> -->
+      <a href="#" class="brand-logo" id="nav-logo"><i class="fas fa-code"></i> Dev Connector</a>
+      <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large right"><i
+          class="material-icons">menu</i></a>
+    </nav>
+    <ul id="slide-out" class="sidenav">
+      <li>
+        <div class="user-view">
           <div class="background">
             <img src="./images/office.jpg">
           </div>
           <div class="exp"><i class="material-icons" id="person">person</i></div>
           <a href="#name"><span class="white-text name">John Doe</span></a>
           <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
-        </div></li>
-        <ul class="collection" >
-          <li class="collection-item">
-            <i class="material-icons circle blue white-text" id="face">face</i> Dashboard
-          </li>
-          <li class="collection-item">
-            <i class="material-icons circle blue white-text" id="face">people</i> Developers
-          </li>
-          <li class="collection-item">
-            <i class="material-icons circle blue white-text" id="face">message</i> Posts
-          </li>
-        </ul>
-      </ul>
-
-        <div class="container" id="CYP">
-          <h2 class="purple-text " >Create Your Profile</h2>
-          <h4> <i class="material-icons ep">person</i>Let's get some information to make your profile stand out</h1>
         </div>
-        <br>
-        <div class="section">
-          <div class="container">
-            <span class="lead c2" >* = required field</span>
-          </div>
-          <form>
+      </li>
+      <ul class="collection">
+        <li class="collection-item">
+          <i class="material-icons circle blue white-text" id="face">face</i> Dashboard
+        </li>
+        <li class="collection-item">
+          <i class="material-icons circle blue white-text" id="face">people</i> Developers
+        </li>
+        <li class="collection-item">
+          <i class="material-icons circle blue white-text" id="face">message</i> Posts
+        </li>
+      </ul>
+    </ul>
+
+
+
+
+    <div class="container" id="CYP">
+      <h2 class="purple-text ">Create Your Profile</h2>
+      <h4> <i class="material-icons ep">person</i>Let's get some information to make your profile stand out</h1>
+    </div>
+    <br />
+    <div class="section">
+      <div class="container">
+        <span class="lead c2">* = required field</span>
+      </div>
+      <form onSubmit={(e)=> handleSubmit(e)}>
         <div class="row">
-          <div class="input-field col xs12 s12 m4 offset-m1 offset-l2 white-text" >
-            <select class="options"><br>
+          <div class="input-field col xs12 s12 m4 offset-m1 offset-l2 white-text">
+            <select class="options" name="status" value={status} onChange={(e)=> handleChange(e)}><br />
               <option value="" disabled selected>*Select Professional Status</option>
               <option value="1" class="">Developer</option>
               <option value="2">Junior Developer</option>
@@ -95,103 +103,133 @@
               <option value="3">Other</option>
             </select>
             <small>Give us an idea of where you are at in your career</small>
-        </div></div>
-      <div class="row">
-        <div class="input-field col xs12 s12 m4 offset-m1 offset-l2 white-text">
-          <input id="company" type="text" class="">
-          <label for="company">Company / Institute</label>
-          <small>Could be your own company or one you work for</small>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="input-field col xs12 s12 m4 offset-m1 offset-l2 white-text">
-          <input id="website" type="text" class="">
-          <label for="website">Website</label>
-          <small>Could be your own or a company website</small>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col xs12 s12 m4 offset-m1 offset-l2 white-text">
-          <input id="location" type="text" class="">
-          <label for="location">Location</label>
-          <small>City & state suggested (eg. Boston, MA)</small>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12 m6 offset-m1 offset-l2 white-text"><br>
-          <input  id="skills" type="text" class="">
-          <label for="skills">* Skills</label>
-          <small>Please use comma separated values (eg. HTML,CSS,JavaScript,PHP)</small>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col xs12 s12 m6 offset-m1 offset-l2 white-text">
-          <input  id="gitname" type="text" class="">
-          <label for="gitname">Github Username</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col xs12 s12 m4 offset-m1 offset-l2 white-text">
-          <textarea placeholder="A short bio of yourself" id="bio" type="text" class="materialize-textarea"></textarea>
-          <label for="bio">Tell us a little about yourself</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col xs12 s12 m4 offset-m1 offset-l2 white-text">
-          <button class="btn waves-effect white black-text" type="" name="" >Add Social Network Links
-          </button>
-        </div>
-      </div>
-      <div class="row">
-          <div class="input-field col xs12 s12 m4 offset-m1 offset-l2 blue-text">
-          <i class="fab fa-twitter prefix"></i>
-          <input type="text" id="Twitter">
-          <label for="Twitter">Twitter URL</label>
-        </div></div>
-      <div class="row">
-          <div class="input-field col xs12 s12 m4 offset-m1 offset-l2 blue-text">
-          <i class="fab fa-facebook prefix"></i>
-          <input type="text" id="Facebook">
-          <label for="Facebook">Facebook URL</label>
-        </div></div>
         <div class="row">
-            <div class="input-field col xs12 s12 m4 offset-m1 offset-l2 blue-text">
-            <i class="fab fa-youtube prefix"></i>
-            <input type="text" id="Youtube">
-            <label for="Youtube">Youtube URL</label>
-          </div></div>
+          <div class="input-field col xs12 s12 m4 offset-m1 offset-l2 white-text">
+            <input id="company" type="text" class="" name="company" value={company} onChange={(e)=> handleChange(e)} />
+            <label for="company">Company / Institute</label>
+            <small>Could be your own company or one you work for</small>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col xs12 s12 m4 offset-m1 offset-l2 white-text">
+            <input id="website" type="text" class="" name="website" value={website} onChange={(e)=> handleChange(e)} />
+            <label for="website">Website</label>
+            <small>Could be your own or a company website</small>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col xs12 s12 m4 offset-m1 offset-l2 white-text">
+            <input id="location" type="text" class="" name="location" value={location} onChange={(e)=> handleChange(e)}
+            />
+            <label for="location">Location</label>
+            <small>City & state suggested (eg. Boston, MA)</small>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12 m6 offset-m1 offset-l2 white-text"><br>
+            <input id="skills" type="text" class="" Skills" name="skills" value={skills} onChange={(e)=>
+            handleChange(e)} />
+            <label for="skills">* Skills</label>
+            <small>Please use comma separated values (eg. HTML,CSS,JavaScript,PHP)</small>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col xs12 s12 m6 offset-m1 offset-l2 white-text">
+            <input id="gitname" type="text" class="" name="githubusername" value={githubusername} onChange={(e)=>
+            handleChange(e)}
+            />
+            <label for="gitname">Github Username</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col xs12 s12 m4 offset-m1 offset-l2 white-text">
+            <textarea placeholder="A short bio of yourself" id="bio" type="text" class="materialize-textarea" name="bio"
+              value={bio} onChange={(e)=> handleChange(e)}></textarea>
+            <label for="bio">Tell us a little about yourself</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col xs12 s12 m4 offset-m1 offset-l2 white-text">
+            <button onClick={()=> toggleSocialInputs(!displaySocialInputs)} class="btn waves-effect white black-text"
+              type="" name="" >Add Social Network Links
+            </button>
+          </div>
+        </div>
+
+        {displaySocialInputs &&
+
+        <div>
           <div class="row">
-              <div class="input-field col xs12 s12 m4 offset-m1 offset-l2 blue-text">
+            <div class="input-field col xs12 s12 m4 offset-m1 offset-l2 blue-text">
+              <i class="fab fa-twitter prefix"></i>
+              <input type="text" id="Twitter" name="twitter" value={twitter} onChange={(e)=> handleChange(e)} />
+              <label for="Twitter">Twitter URL</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col xs12 s12 m4 offset-m1 offset-l2 blue-text">
+              <i class="fab fa-facebook prefix"></i>
+              <input type="text" id="Facebook" name="facebook" value={facebook} onChange={(e)=> handleChange(e)} />
+              <label for="Facebook">Facebook URL</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col xs12 s12 m4 offset-m1 offset-l2 blue-text">
+              <i class="fab fa-youtube prefix"></i>
+              <input type="text" id="Youtube" name="youtube" value={youtube} onChange={(e)=> handleChange(e)} />
+              <label for="Youtube">Youtube URL</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col xs12 s12 m4 offset-m1 offset-l2 blue-text">
               <i class="fab fa-linkedin prefix"></i>
-              <input type="text" id="Linkedin">
+              <input type="text" id="Linkedin" name="linkedin" value={linkedin} onChange={(e)=> handleChange(e)} />
               <label for="Linkedin">Linkedin URL</label>
-            </div></div>
-            <div class="row">
-                <div class="input-field col xs12 s12 m4 offset-m1 offset-l2 blue-text">
-                <i class="fab fa-instagram prefix"></i>
-                <input type="text" id="insta">
-                <label for="insta">Instagram URL</label>
-              </div></div>
-      <div class="row">
-        <div class="input-field col xs6 s6 m4 offset-m1 offset-l2 white-text">
-          <button class="btn waves-effect waves-light blue" type="submit" name="action" >Submit
-            <i class="material-icons right">send</i>
-          </button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col xs12 s12 m4 offset-m1 offset-l2 blue-text">
+              <i class="fab fa-instagram prefix"></i>
+              <input type="text" id="insta" name="instagram" value={instagram} onChange={(e)=> handleChange(e)} />
+              <label for="insta">Instagram URL</label>
+            </div>
+          </div>
+
         </div>
+
+
+        }
+
+
+
+
+
+        <div class="row">
+          <div class="input-field col xs6 s6 m4 offset-m1 offset-l2 white-text">
+            <button class="btn waves-effect waves-light blue" type="submit" name="action">Submit
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
           <div class="input-field col xs6 s6 m4 pull-m2">
-          <button class="btn waves-effect white black-text"  >
-            <i class="fas fa-arrow-left" ></i><span> Go Back</span>
-          </button>
+            <Link to="/dashboard" class="btn waves-effect white black-text">
+            <i class="fas fa-arrow-left"></i><span> Go Back</span>
+            </Link>
+          </div>
         </div>
-      </div>
-    </form>
+      </form>
     </div>
+
+
+
   </div>
-    <!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js">
+  <!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js">
     </script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js">
     </script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js">
     </script> -->
 </body>
+
 </html>

@@ -49,119 +49,151 @@ const CreateProfile = ({ createProfile, history }) => {
     return (
         <div>
 
-            <section className="container">
-                <h1 className="large text-primary">
-                    Create Your Profile
-      </h1>
-                <p className="lead">
-                    <i className="fas fa-user"></i> Let's get some information to make your
-                    profile stand out
-      </p>
-                <small>* = required field</small>
-                <form className="form" onSubmit={(e) => handleSubmit(e)}>
-                    <div className="form-group">
-                        <select name="status" value={status} onChange={(e) => handleChange(e)} >
-                            <option value="0">* Select Professional Status</option>
-                            <option value="Developer">Developer</option>
-                            <option value="Junior Developer">Junior Developer</option>
-                            <option value="Senior Developer">Senior Developer</option>
-                            <option value="Manager">Manager</option>
-                            <option value="Student or Learning">Student or Learning</option>
-                            <option value="Instructor">Instructor or Teacher</option>
-                            <option value="Intern">Intern</option>
-                            <option value="Other">Other</option>
-                        </select>
-                        <small className="form-text"
-                        >Give us an idea of where you are at in your career</small
-                        >
-                    </div>
-                    <div className="form-group">
-                        <input type="text" placeholder="Company" name="company" value={company} onChange={(e) => handleChange(e)} />
-                        <small className="form-text"
-                        >Could be your own company or one you work for</small
-                        >
-                    </div>
-                    <div className="form-group">
-                        <input type="text" placeholder="Website" name="website" value={website} onChange={(e) => handleChange(e)} />
-                        <small className="form-text"
-                        >Could be your own or a company website</small
-                        >
-                    </div>
-                    <div className="form-group">
-                        <input type="text" placeholder="Location" name="location" value={location} onChange={(e) => handleChange(e)} />
-                        <small className="form-text"
-                        >City & state suggested (eg. Boston, MA)</small
-                        >
-                    </div>
-                    <div className="form-group">
-                        <input type="text" placeholder="* Skills" name="skills" value={skills} onChange={(e) => handleChange(e)} />
-                        <small className="form-text"
-                        >Please use comma separated values (eg.
-            HTML,CSS,JavaScript,PHP)</small
-                        >
-                    </div>
-                    <div className="form-group">
-                        <input
-                            type="text"
-                            placeholder="Github Username"
-                            name="githubusername"
-                            value={githubusername} onChange={(e) => handleChange(e)}
-                        />
-                        <small className="form-text"
-                        >If you want your latest repos and a Github link, include your
-            username</small
-                        >
-                    </div>
-                    <div className="form-group">
-                        <textarea placeholder="A short bio of yourself" name="bio" value={bio} onChange={(e) => handleChange(e)}></textarea>
-                        <small className="form-text">Tell us a little about yourself</small>
-                    </div>
 
-                    <div className="my-2">
-                        <button onClick={() => toggleSocialInputs(!displaySocialInputs)} type="button" className="btn btn-light">
-                            Add Social Network Links
-          </button>
-                        <span>Optional</span>
+            <div className="container" id="CYP">
+                <h2 className="purple-text ">Create Your Profile</h2>
+                <h4> <i className="material-icons ep">person</i>Let's get some information to make your profile stand out</h4>
+            </div>
+            <br />
+            <div className="section">
+                <div className="container">
+                    <span className="lead c2">* = required field</span>
+                </div>
+                <form onSubmit={(e) => handleSubmit(e)}>
+                    <div className="row">
+                        <div className="input-field col xs12 s12 m4 offset-m1 offset-l2 white-text">
+                            <select className="options" name="status" value={status} onChange={(e) => handleChange(e)}><br />
+                                <option value="" disabled selected>*Select Professional Status</option>
+                                <option value="1" className="">Developer</option>
+                                <option value="2">Junior Developer</option>
+                                <option value="3">Senior Developer</option>
+                                <option value="4">Manager</option>
+                                <option value="5">Student or Learning</option>
+                                <option value="6">Instructor or Teacher</option>
+                                <option value="3">Intern</option>
+                                <option value="3">Other</option>
+                            </select>
+                            <small>Give us an idea of where you are at in your career</small>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="input-field col xs12 s12 m4 offset-m1 offset-l2 white-text">
+                            <input id="company" type="text" className="" name="company" value={company} onChange={(e) => handleChange(e)} />
+                            <label for="company">Company / Institute</label>
+                            <small>Could be your own company or one you work for</small>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="input-field col xs12 s12 m4 offset-m1 offset-l2 white-text">
+                            <input id="website" type="text" className="" name="website" value={website} onChange={(e) => handleChange(e)} />
+                            <label for="website">Website</label>
+                            <small>Could be your own or a company website</small>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="input-field col xs12 s12 m4 offset-m1 offset-l2 white-text">
+                            <input id="location" type="text" className="" name="location" value={location} onChange={(e) => handleChange(e)}
+                            />
+                            <label for="location">Location</label>
+                            <small>City & state suggested (eg. Boston, MA)</small>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="input-field col s12 m6 offset-m1 offset-l2 white-text"><br />
+                            <input id="skills" type="text" className="Skills" name="skills" value={skills} onChange={(e) =>
+                                handleChange(e)} />
+                            <label for="skills">* Skills</label>
+                            <small>Please use comma separated values (eg. HTML,CSS,JavaScript,PHP)</small>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="input-field col xs12 s12 m6 offset-m1 offset-l2 white-text">
+                            <input id="gitname" type="text" className="" name="githubusername" value={githubusername} onChange={(e) =>
+                                handleChange(e)}
+                            />
+                            <label for="gitname">Github Username</label>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="input-field col xs12 s12 m4 offset-m1 offset-l2 white-text">
+                            <textarea placeholder="A short bio of yourself" id="bio" type="text" className="materialize-textarea" name="bio"
+                                value={bio} onChange={(e) => handleChange(e)}></textarea>
+                            <label for="bio">Tell us a little about yourself</label>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="input-field col xs12 s12 m4 offset-m1 offset-l2 white-text">
+                            <button onClick={(e) => toggleSocialInputs(!displaySocialInputs)} className="btn waves-effect white black-text"
+                                name="toggle"   >Add Social Network Links
+            </button>
+                        </div>
                     </div>
 
                     {displaySocialInputs &&
+
                         <div>
-
-                            <div className="form-group social-input">
-                                <i className="fab fa-twitter fa-2x"></i>
-                                <input type="text" placeholder="Twitter URL" name="twitter" value={twitter} onChange={(e) => handleChange(e)} />
+                            <div className="row">
+                                <div className="input-field col xs12 s12 m4 offset-m1 offset-l2 blue-text">
+                                    <i className="fab fa-twitter prefix"></i>
+                                    <input type="text" id="Twitter" name="twitter" value={twitter} onChange={(e) => handleChange(e)} />
+                                    <label for="Twitter">Twitter URL</label>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="input-field col xs12 s12 m4 offset-m1 offset-l2 blue-text">
+                                    <i className="fab fa-facebook prefix"></i>
+                                    <input type="text" id="Facebook" name="facebook" value={facebook} onChange={(e) => handleChange(e)} />
+                                    <label for="Facebook">Facebook URL</label>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="input-field col xs12 s12 m4 offset-m1 offset-l2 blue-text">
+                                    <i className="fab fa-youtube prefix"></i>
+                                    <input type="text" id="Youtube" name="youtube" value={youtube} onChange={(e) => handleChange(e)} />
+                                    <label for="Youtube">Youtube URL</label>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="input-field col xs12 s12 m4 offset-m1 offset-l2 blue-text">
+                                    <i className="fab fa-linkedin prefix"></i>
+                                    <input type="text" id="Linkedin" name="linkedin" value={linkedin} onChange={(e) => handleChange(e)} />
+                                    <label for="Linkedin">Linkedin URL</label>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="input-field col xs12 s12 m4 offset-m1 offset-l2 blue-text">
+                                    <i className="fab fa-instagram prefix"></i>
+                                    <input type="text" id="insta" name="instagram" value={instagram} onChange={(e) => handleChange(e)} />
+                                    <label for="insta">Instagram URL</label>
+                                </div>
                             </div>
 
-                            <div className="form-group social-input">
-                                <i className="fab fa-facebook fa-2x"></i>
-                                <input type="text" placeholder="Facebook URL" name="facebook" value={facebook} onChange={(e) => handleChange(e)} />
-                            </div>
+                        </div>
 
-                            <div className="form-group social-input">
-                                <i className="fab fa-youtube fa-2x"></i>
-                                <input type="text" placeholder="YouTube URL" name="youtube" value={youtube} onChange={(e) => handleChange(e)} />
-                            </div>
 
-                            <div className="form-group social-input">
-                                <i className="fab fa-linkedin fa-2x"></i>
-                                <input type="text" placeholder="Linkedin URL" name="linkedin" value={linkedin} onChange={(e) => handleChange(e)} />
-                            </div>
-
-                            <div className="form-group social-input">
-                                <i className="fab fa-instagram fa-2x"></i>
-                                <input type="text" placeholder="Instagram URL" name="instagram" value={instagram} onChange={(e) => handleChange(e)} />
-                            </div>
+                    }
 
 
 
-                        </div>}
 
 
-
-                    <input type="submit" className="btn btn-primary my-1" />
-                    <Link className="btn btn-light my-1" to="">Go Back</Link>
+                    <div className="row">
+                        <div className="input-field col xs6 s6 m4 offset-m1 offset-l2 white-text">
+                            <button className="btn waves-effect waves-light blue" type="submit" name="action">Submit
+              <i className="material-icons right">send</i>
+                            </button>
+                        </div>
+                        <div className="input-field col xs6 s6 m4 pull-m2">
+                            <Link to="/dashboard" className="btn waves-effect white black-text">
+                                <i className="fas fa-arrow-left"></i><span> Go Back</span>
+                            </Link>
+                        </div>
+                    </div>
                 </form>
-            </section>
+            </div>
+
+
+
 
 
         </div>

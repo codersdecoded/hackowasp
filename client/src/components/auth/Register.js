@@ -57,48 +57,55 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
         <div>
 
 
-            <section className="container">
-                <h1 className="large text-primary">Sign Up</h1>
-                <p className="lead"><i className="fas fa-user"></i> Create Your Account</p>
-                <form className="form" onSubmit={(e) => handleSubmit(e)}>
-                    <div className="form-group">
-                        <input type="text" placeholder="Name" name="name" value={name} required onChange={(e) => handleChange(e)} />
+
+            <div className="center">
+                <div className="" id="SI">
+                    <h2 className="purple-text" >Sign Up</h2>
+                    <h4> <i className="material-icons ep" >person</i>Login to your account</h4>
+                </div>
+                <form onSubmit={(e) => handleSubmit(e)}>
+                    <div className="row">
+                        <div className="col s6 l6 offset-l3">
+                            <div className="input-field">
+                                <input type="text" id="fname" name="name" value={name} required onChange={(e) => handleChange(e)} />
+                                <label for="fname">Your  Name</label>
+                            </div>
+                        </div>
                     </div>
-                    <div className="form-group">
-                        <input type="email" placeholder="Email Address" onChange={(e) => handleChange(e)} value={email} name="email" required />
-                        <small className="form-text"
-                        >This site uses Gravatar so if you want a profile image, use a
-                Gravatar email</small
-                        >
+                    <div className="row">
+                        <div className="col s12 l6 offset-l3">
+                            <form className="">
+                                <div className="input-field">
+                                    <i className="material-icons prefix">email</i>
+                                    <input type="email" id="email" onChange={(e) => handleChange(e)} value={email} name="email" required />
+                                    <label for="email">Your Email</label>
+                                    <span >This site uses Gravatar so if you want a profile image, use a Gravatar email</span>
+                                </div>
+                                <div className="input-field">
+                                    <input type="password" id="pass" name="password"
+                                        value={password}
+                                        minLength="6"
+                                        onChange={(e) => handleChange(e)}
+                                    />
+                                    <label for="pass">Password</label>
+                                </div>
+                                <div className="input-field">
+                                    <input type="password" id="cpass" value={password2}
+
+                                        name="password2"
+                                        minLength="6"
+                                        onChange={(e) => handleChange(e)}
+                                    />
+                                    <label for="cpass">Confirm Password</label>
+                                </div>
+                                <button className="btn waves-effect waves-light purple darken-2" type="submit" name="action" >Register
+          </button>
+                            </form>
+                            <span><h6>Already have an account? <Link to="/login">Sign In</Link></h6></span>
+                        </div>
                     </div>
-                    <div className="form-group">
-                        <input
-                            type="password"
-                            placeholder="Password"
-                            name="password"
-                            value={password}
-                            minLength="6"
-                            onChange={(e) => handleChange(e)}
-                        />
-                    </div>
-                    <div className="form-group">
-                        <input
-                            type="password"
-                            value={password2}
-                            placeholder="Confirm Password"
-                            name="password2"
-                            minLength="6"
-                            onChange={(e) => handleChange(e)}
-                        />
-                    </div>
-                    <input type="submit" className="btn btn-primary" value="Register" />
                 </form>
-                <p className="my-1">
-                    Already have an account? <Link to="/login">Sign In</Link>
-                </p>
-            </section>
-
-
+            </div>
         </div>
 
     )

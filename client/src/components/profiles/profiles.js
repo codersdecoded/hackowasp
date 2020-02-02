@@ -13,24 +13,33 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
         <div>
             {loading ? <Spinner /> :
                 <div>
-                    <h1 class="large text-primary">Developers</h1>
-                    <p class="lead">
-                        <i class="fab fa-connectdevelop"></i> Browse and connect with developers
-                </p>
-                    <div className="profiles">
-                        {profiles.length > 0 ? (
+                    <section>
+
+                        <div class="container">
+                            <h2>Developers</h2>
+                            <h4 id="supr"><i class="fab fa-connectdevelop"></i>Browse and connect with developers</h4>
+                        </div>
+                    </section>
+                    <div class="section">
+                        <div class="container">
+
+                            <div class="profiles">
+                                {profiles.length > 0 ? (
 
 
-                            profiles.map(profile => {
-                                return (
-                                    <ProfileItem key={profile._id} profile={profile} />
-                                )
-                            })
+                                    profiles.map(profile => {
+                                        return (
+                                            <ProfileItem key={profile._id} profile={profile} />
+                                        )
+                                    })
 
 
-                        ) : (<h4>No profiles found yet</h4>)}
+                                ) : (<h4>No profiles found yet</h4>)}
 
+                            </div>
+                        </div>
                     </div>
+
 
                 </div>
             }

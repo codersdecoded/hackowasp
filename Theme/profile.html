@@ -1,147 +1,172 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Materialize</title>
-    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <!-- Compiled and minified CSS -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-   <!--Import Google Icon Font-->
-<link rel="stylesheet" href="./formstyle.css">
-   <style>
-      li.text-black{
-       padding:8px;
-     }
-   </style>
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   <!-- Compiled and minified JavaScript -->
-   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-   <script>
-     $(document).ready(function(){
-       $('.sidenav').sidenav();
-       $('.parallax').parallax();
-       $('.materialbox').materialbox();
-       $('.tabs').tabs();
-       $('.datepicker').datepicker();
-       $('.tooltipped').tooltip();
-       $('.scrollspy').scrollSpy();
-       $('select').formSelect();
-     })
-   </script>
-   </head>
-   <body>
 
-     <div class="main">
-       <nav class="nav-wrapper black">
-         <div class="container">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Materialize</title>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <!--Import Google Icon Font-->
+  <link rel="stylesheet" href="./formstyle.css">
+  <style>
+    li.text-black {
+      padding: 8px;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.sidenav').sidenav();
+      $('.parallax').parallax();
+      $('.materialbox').materialbox();
+      $('.tabs').tabs();
+      $('.datepicker').datepicker();
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy();
+      $('select').formSelect();
+    })
+  </script>
+</head>
 
-         <!-- <div class="container"> -->
-           <a href="#" class="brand-logo" id="nav-logo"><i class="fas fa-code"></i> Dev Connector</a>
-           <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-           <ul class="right hide-on-med-and-down">
-             <li><a href="#photos">Developers</a></li>
-             <li><a href="#services">Post</a></li>
-             <li><a href="#contact">Dashboard</a></li>
-             <li><a href="#">Logout</a></li>
-           </ul>
-         </div>
-       </nav>
-       <ul id="slide-out" class="sidenav">
-         <li><div class="user-view">
-           <div class="background">
-             <img src="./office.jpg">
-           </div>
-           <div class="exp"><i class="material-icons" id="person">person</i></div>
-           <a href="#name"><span class="white-text name">John Doe<a href="#" class="secondary-content">
-             <i class="material-icons white-text">logout</i>
-           </a></span></a>
-           <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
-         </div></li>
-         <ul class="collection">
-           <li class="collection-item">
-             <i class="material-icons circle blue white-text" id="face">face</i> Dashboard
-           </li>
-           <li class="collection-item">
-             <i class="material-icons circle blue white-text" id="face">people</i> Developers
-           </li>
-           <li class="collection-item">
-             <i class="material-icons circle blue white-text" id="face" style="font-size:1.2rem">message</i> Posts
-           </li>
-         </ul>
-       </ul>
-       </div>
-       <br><br><br>
-<div class="container" id="defs">
-  <button class="btn waves-effect white black-text" type="submit" name="action" >
-    <i class="fas fa-arrow-left" ></i><span> Back To Profiles</span>
-  </button>
-  <div class="center indigo white-text" id="buf">
-    <img
-      class="circle responsive-img"
-      src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200"
-      alt="">
-      <h2>John Doe</h2>
-      <h5 >Developer at Microsoft</h5>
-      <p >Seattle, WA</p>
-      <div class="center" style="font-size:3rem;">
-      <i class="fas fa-globe"></i>
-      <i class="fab fa-twitter">twitter</i>
-      <i class="fab fa-facebook">facebook</i>
-      <i class="fab fa-linkedin">linkedin</i>
-      <i class="fab fa-youtube">youtube</i>
-      <i class="fab fa-instagram">instagram</i>
-    </div>
-  </div>
-</div>
-<div class="container">
-    <div class="center" >
-      <div class="" id="ch">
-      <h5>John's Bio</h5>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed doloremque nesciunt, repellendus nostrum deleniti recusandae nobis neque modi perspiciatis similique?</p>
-      <hr class="divider">
-      <h5>Skill Set</h5>
-      <ul >
-        <li class="text-black">
-          <i class="fas fa-check"></i> HTML
+<body>
+
+  <div class="main">
+    <nav class="nav-wrapper black">
+      <div class="container">
+
+        <!-- <div class="container"> -->
+        <a href="#" class="brand-logo" id="nav-logo"><i class="fas fa-code"></i> Dev Connector</a>
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#photos">Developers</a></li>
+          <li><a href="#services">Post</a></li>
+          <li><a href="#contact">Dashboard</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+    <ul id="slide-out" class="sidenav">
+      <li>
+        <div class="user-view">
+          <div class="background">
+            <img src="./office.jpg">
+          </div>
+          <div class="exp"><i class="material-icons" id="person">person</i></div>
+          <a href="#name"><span class="white-text name">John Doe<a href="#" class="secondary-content">
+                <i class="material-icons white-text">logout</i>
+              </a></span></a>
+          <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+        </div>
+      </li>
+      <ul class="collection">
+        <li class="collection-item">
+          <i class="material-icons circle blue white-text" id="face">face</i> Dashboard
         </li>
-        <li class="text-black">
-          <i class="fas fa-check"></i> CSS
+        <li class="collection-item">
+          <i class="material-icons circle blue white-text" id="face">people</i> Developers
         </li>
-        <li class="text-black">
-          <i class="fas fa-check"></i> JavaScript
-        </li>
-        <li class="text-black">
-          <i class="fas fa-check"></i> Python
-        </li>
-        <li class="text-black">
-          <i class="fas fa-check"></i> C#
+        <li class="collection-item">
+          <i class="material-icons circle blue white-text" id="face" style="font-size:1.2rem">message</i> Posts
         </li>
       </ul>
-    </div>
+    </ul>
   </div>
-</div>
-<div class="container" id="madar" >
-<div class="row">
-  <div class="col s12 m6" id="set" >
-      <h4>Experience</h4>
-      <h5>Microsoft</h5>
-      Oct 2011 -Current
-      <p><strong>Position</strong></p>
-      <p><strong>Description</strong></p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-    </div>
-    <div class="col s12 m6"  id="seet">
-        <h4>Education</h4>
-        <h5>Microsoft</h5>
-        Oct 2011 -Current
-        <p><strong>Position</strong></p>
-        <p><strong>Description</strong></p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+  <br><br><br>
+
+
+
+
+
+  <div class="container" id="defs">
+    <Link to='/profiles' className="btn waves-effect white black-text"><i class="fas fa-arrow-left"></i><span> Back To
+      Profiles</span></Link>
+    <div class="center indigo white-text" id="buf">
+      <img class="circle responsive-img" src={avatar} alt="" />
+      <h2>{name}</h2>
+      <h5>{status} {company && <span> at {company}</span>} </h5>
+      <p>{location && <span> {location}</span>} </p>
+      <div class="center" style="font-size:3rem;">
+        {website && <a href={website} target="_blank" rel="noopener noreferrer">
+          <i class="fas fa-globe fa-2x"></i>
+        </a>}
+
+        {social && social.twitter &&
+        <a href={social.twitter} target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-twitter fa-2x"></i>
+        </a>
+        }
+
+        {social && social.facebook &&
+        <a href={social.facebook} target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-facebook fa-2x"></i>
+        </a>
+        }
+
+        {social && social.linkedin &&
+        <a href={social.linkedin} target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        }
+
+        {social && social.youtube &&
+
+        <a href={social.youtube} target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-youtube fa-2x"></i>
+        </a>
+        }
+
+        {social && social.instagram &&
+        <a href={social.instagram} target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+        }
+
+
       </div>
+    </div>
   </div>
-</div>
+  <div class="container">
+    <div class="center">
+      <div class="" id="ch">
+        <h5>{name.trim().split(' ')[0]}'s ' Bio</h5>
+        <p>{bio}</p>
+        <hr class="divider">
+        <h5>Skill Set</h5>
+        <ul>
+          {skills.map((skill, index) => {
+          return (
+          < li key={index} className="text-black">
+            <i className="fas fa-check"></i>{skill} </li>
+            )
+            })}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="madar">
+    <div class="row">
+      <div class="col s12 m6" id="set">
+        <h5>{company}</h5>
+        <Moment format='YYYY/MM/DD'>{from}</Moment> --{!to ? ('Now') : <Moment format='YYYY/MM/DD'>{to}</Moment>}
+        <p><strong>{title}</strong></p>
+        <p><strong>{description}</strong></p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+      </div>
+      <div class="col s12 m6" id="seet">
+        <h4>{degree}</h4>
+        <h5>{school}</h5>
+        <Moment format='YYYY/MM/DD'>{from}</Moment> --{!to ? ('Now') : <Moment format='YYYY/MM/DD'>{to}</Moment>}
+        <p><strong>{fieldofstudy}</strong></p>
+        <p><strong>{description}</strong></p>
+      </div>
+    </div>
+  </div>

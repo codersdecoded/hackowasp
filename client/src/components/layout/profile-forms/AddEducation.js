@@ -39,55 +39,80 @@ const AddEducation = ({ addEducation, history }) => {
 
     return (
         <div>
-            <section class="container">
-                <h1 class="large text-primary">
-                    Add  Education
-      </h1>
-                <p class="lead">
-                    <i class="fas fa-code-branch"></i> Add your Previous Study Background      </p>
-                <small>* = required field</small>
-                <form class="form" onSubmit={e => handleSubmit(e)}>
-                    <div class="form-group">
-                        <input type="text" placeholder="* degree" name="degree" value={degree} onChange={e => handleChange(e)} required />
+            <div className="container" id="CYP">
+                <h2 className="purple-text" >Add Your Education</h2>
+                <h5> <i className="material-icons" >school</i> Add any school, bootcamp, etc that you have attended</h5>
+            </div>
+            <br />
+            <div className="section">
+                <div className="container">
+                    <span className="lead c2">* = required field</span>
+                </div>
+                <form onSubmit={e => handleSubmit(e)}>
+                    <div className="row">
+                        <div className="input-field col xs12 s12 m4 offset-m1 offset-l2 white-text">
+                            <input id="school" type="text" className="" name="school" value={school} onChange={e => handleChange(e)} required />
+                            <label for="school">School/Bootcaamp</label>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input type="text" placeholder="* school" name="school" value={school} onChange={e => handleChange(e)} required />
+                    <div className="row">
+                        <div className="input-field col s12 m4 offset-m1 offset-l2 white-text">
+                            <input id="deg" type="text" className="active" name="degree" value={degree} onChange={e => handleChange(e)} required />
+                            <label for="deg">Degree/Certificate</label>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input type="text" placeholder="fieldofstudy" name="fieldofstudy" value={fieldofstudy} onChange={e => handleChange(e)} />
+                    <div className="row">
+                        <div className="input-field col xs12 s12 m4 offset-m1 offset-l2 white-text">
+                            <input id="fos" type="text" className="" name="fieldofstudy" value={fieldofstudy} onChange={e => handleChange(e)} />
+                            <label for="fos">Field Of Study</label>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <h4>From Date</h4>
-                        <input type="date" name="from" value={from} onChange={e => handleChange(e)} />
+                    <div className="row">
+                        <div className="input-field col xs12 s12 m3 l2 offset-l2">
+                            <i className="material-icons prefix">date_range</i>
+                            <input type="text" id="date" className="datepicker" name="from" value={from} onChange={e => handleChange(e)} />
+                            <label for="date">From Date</label>
+                        </div>
+                        <div className="input-field col xs12 s12 m3 l2">
+                            <i className="material-icons prefix">date_range</i>
+                            <input type="text" id="date1" className="datepicker" name="to" value={to} onChange={e => handleChange(e)} disabled={toDateDisabled ? 'disabled' : ''} />
+                            <label for="date1">To Date</label>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <p><input type="checkbox"
-                            name="current" value=""
-                            checked={current}
+                    <div className="row">
+                        <div className="input-field col xs12 s12 m4 offset-m1 offset-l2">
+                            <label>
+                                <input type="checkbox" name="current" value=""
+                                    checked={current}
 
-                            onChange={e => {
-                                setFormData({ ...formData, current: !current });
-                                toggleDisabled(!toDateDisabled);
-                            }} />
-                            Current Job</p>
+                                    onChange={e => {
+                                        setFormData({ ...formData, current: !current });
+                                        toggleDisabled(!toDateDisabled);
+                                    }} />
+                                <span id="hu">Current School/Bootcamp</span>
+                            </label>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <h4>To Date</h4>
-                        <input type="date" name="to" value={to} onChange={e => handleChange(e)} disabled={toDateDisabled ? 'disabled' : ''} />
+                    <div className="row">
+                        <div className="input-field col xs12 s12 m4 offset-m1 offset-l2 white-text">
+                            <textarea id="des" type="text" className="materialize-textarea" name="description" value={description} onChange={e => handleChange(e)}></textarea>
+                            <label for="des">Program Description</label>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <textarea
-                            name="description"
-                            cols="30"
-                            rows="5"
-                            placeholder="Job Description"
-                            value={description} onChange={e => handleChange(e)}
-                        ></textarea>
+                    <div className="row">
+                        <div className="input-field col xs6 s6 m4 offset-m1 offset-l2 white-text">
+                            <button className="btn waves-effect waves-light purple darken-2" type="submit" name="action" >Submit
+            <i className="material-icons right">send</i>
+                            </button>
+                        </div>
+                        <div className="input-field col xs6 s6 m4 pull-m2">
+                            <Link to="/dashboard" className="btn waves-effect white black-text" >
+                                <i className="fas fa-arrow-left" ></i><span> Go Back</span>
+                            </Link>
+                        </div>
                     </div>
-                    <input type="submit" class="btn btn-primary my-1" />
-                    <Link class="btn btn-light my-1" href="dashboard.html">Go Back</Link>
                 </form>
-            </section>
+            </div>
         </div>
     )
 }

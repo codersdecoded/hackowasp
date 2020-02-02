@@ -45,37 +45,37 @@ const Login = ({ login, isAuthenticated }) => {
 
         <div>
 
-
-            <section className="container">
-                <h1 className="large text-primary">Sign In</h1>
-                <p className="lead"><i className="fas fa-user"></i> Login to your account</p>
-                <form className="form" onSubmit={(e) => handleSubmit(e)}>
-
-                    <div className="form-group">
-                        <input type="email" placeholder="Email Address" onChange={(e) => handleChange(e)} value={email} name="email" required />
-                        <small className="form-text"
-                        >This site uses Gravatar so if you want a profile image, use a
-                Gravatar email</small
-                        >
+            <div className="center">
+                <div className="container" id="SI">
+                    <h2 className="purple-text" >Sign In</h2>
+                    <h4> <i className="material-icons ep">person</i>Login to your account</h4>
+                </div>
+                <form onSubmit={(e) => handleSubmit(e)}>
+                    <div className="row">
+                        <div className="col s12 l8 center offset-l2">
+                            <form className="">
+                                <div className="input-field">
+                                    <i className="material-icons prefix">email</i>
+                                    <input type="email" id="email" onChange={(e) => handleChange(e)} value={email} name="email" required />
+                                    <label for="email">Your Email</label>
+                                    <span >This site uses Gravatar so if you want a profile image, use a Gravatar email</span>
+                                </div>
+                                <div className="input-field">
+                                    <i className="material-icons prefix">lock</i>
+                                    <input type="password" id="pass" name="password"
+                                        value={password}
+                                        minLength="6"
+                                        onChange={(e) => handleChange(e)} />
+                                    <label for="pass">Password</label>
+                                </div>
+                                <button className="btn waves-effect waves-light purple darken-2" type="submit" name="action" >Login
+         </button>
+                            </form>
+                            <span><h6>Don't have an account?<Link to="/register">Sign up</Link></h6></span>
+                        </div>
                     </div>
-                    <div className="form-group">
-                        <input
-                            type="password"
-                            placeholder="Password"
-                            name="password"
-                            value={password}
-                            minLength="6"
-                            onChange={(e) => handleChange(e)}
-                        />
-                    </div>
-
-                    <input type="submit" className="btn btn-primary" value="Login" />
                 </form>
-                <p className="my-1">
-                    Don't have an account? <Link to="/register">Sign up</Link>
-                </p>
-            </section>
-
+            </div>
 
         </div>
 

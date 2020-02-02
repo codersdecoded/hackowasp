@@ -1,151 +1,165 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Materialize</title>
-    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="./formstyle.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-   <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   <!-- Compiled and minified JavaScript -->
-   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-   <script>
-     $(document).ready(function(){
-       $('.sidenav').sidenav();
-       $('.parallax').parallax();
-       $('.materialbox').materialbox();
-       $('.tabs').tabs();
-       $('.datepicker').datepicker({
-         disableWeekends:true
-       });
-       $('.tooltipped').tooltip();
-       $('.scrollspy').scrollSpy();
-       $('select').formSelect();
-       $(document).ready(function(){
-       $('.collapsible').collapsible();
-       });
-       $("#Button").click(function(){
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Materialize</title>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="./formstyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.sidenav').sidenav();
+      $('.parallax').parallax();
+      $('.materialbox').materialbox();
+      $('.tabs').tabs();
+      $('.datepicker').datepicker({
+        disableWeekends: true
+      });
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy();
+      $('select').formSelect();
+      $(document).ready(function () {
+        $('.collapsible').collapsible();
+      });
+      $("#Button").click(function () {
         $(this).toggleClass("my");
-    });
-     })
-   </script>
-  </head>
-  <body>
-    <!-- <div class="demo" >
+      });
+    })
+  </script>
+</head>
+
+<body>
+  <!-- <div class="demo" >
    <div class="content">
       <div id="large-header" class="large-header">
          <canvas id="demo-canvas"></canvas></div></div></div> -->
-    <div class="main">
+  <div class="main">
 
-      <nav class="nav-wrapper white">
-        <!-- <div class="container"> -->
-          <a href="#" class="brand-logo" id="nav-logo"><i class="fas fa-code"></i> Dev Connector</a>
-          <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large right"><i class="material-icons">menu</i></a>
-      </nav>
-      <ul id="slide-out" class="sidenav">
-        <li><div class="user-view">
+    <nav class="nav-wrapper white">
+      <!-- <div class="container"> -->
+      <a href="#" class="brand-logo" id="nav-logo"><i class="fas fa-code"></i> Dev Connector</a>
+      <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large right"><i
+          class="material-icons">menu</i></a>
+    </nav>
+    <ul id="slide-out" class="sidenav">
+      <li>
+        <div class="user-view">
           <div class="background">
             <img src="./images/office.jpg">
           </div>
           <div class="exp"><i class="material-icons" id="person">person</i></div>
           <a href="#name"><span class="white-text name">John Doe</span></a>
           <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
-        </div></li>
-        <ul class="collection">
-          <li class="collection-item">
-            <i class="material-icons circle blue white-text" id="face">face</i> Dashboard
-          </li>
-          <li class="collection-item">
-            <i class="material-icons circle blue white-text" id="face">people</i> Developers
-          </li>
-          <li class="collection-item">
-            <i class="material-icons circle blue white-text" id="face" >message</i> Posts
-          </li>
-        </ul>
+        </div>
+      </li>
+      <ul class="collection">
+        <li class="collection-item">
+          <i class="material-icons circle blue white-text" id="face">face</i> Dashboard
+        </li>
+        <li class="collection-item">
+          <i class="material-icons circle blue white-text" id="face">people</i> Developers
+        </li>
+        <li class="collection-item">
+          <i class="material-icons circle blue white-text" id="face">message</i> Posts
+        </li>
       </ul>
+    </ul>
 
 
-        <div class="container" id="CYP">
-          <h2 class="purple-text" style="">Add Your Education</h2>
-          <h5> <i class="material-icons" >school</i> Add any school, bootcamp, etc that you have attended</h5>
-        </div>
-        <br>
-        <div class="section">
-          <div class="container">
-            <span class="lead c2">* = required field</span>
-          </div>
-          <form class="" action="index.html" method="post">
-          <div class="row">
-            <div class="input-field col xs12 s12 m4 offset-m1 offset-l2 white-text">
-              <input id="school" type="text" class="">
-              <label for="school">School/Bootcaamp</label>
-            </div>
-          </div>
-      <div class="row">
-        <div class="input-field col s12 m4 offset-m1 offset-l2 white-text">
-          <input id="deg" type="text" class="active">
-          <label for="deg">Degree/Certificate</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col xs12 s12 m4 offset-m1 offset-l2 white-text">
-          <input id="fos" type="text" class="" >
-          <label for="fos">Field Of Study</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col xs12 s12 m3 l2 offset-l2">
-            <i class="material-icons prefix">date_range</i>
-          <input type="text" id="date" class="datepicker">
-          <label for="date">From Date</label>
-        </div>
-        <div class="input-field col xs12 s12 m3 l2">
-          <i class="material-icons prefix">date_range</i>
-          <input type="text" id="date1" class="datepicker">
-          <label for="date1">To Date</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col xs12 s12 m4 offset-m1 offset-l2">
-          <label>
-            <input type="checkbox">
-            <span id="hu">Current School/Bootcamp</span>
-          </label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col xs12 s12 m4 offset-m1 offset-l2 white-text">
-          <textarea id="des" type="text" class="materialize-textarea"></textarea>
-          <label for="des">Program Description</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col xs6 s6 m4 offset-m1 offset-l2 white-text">
-          <button class="btn waves-effect waves-light purple darken-2" type="submit" name="action" >Submit
-            <i class="material-icons right">send</i>
-          </button>
-        </div>
-          <div class="input-field col xs6 s6 m4 pull-m2">
-          <button class="btn waves-effect white black-text" >
-            <i class="fas fa-arrow-left" ></i><span> Go Back</span>
-          </button>
-        </div>
-      </div>
-    </form>
+    <div class="container" id="CYP">
+      <h2 class="purple-text">Add Your Education</h2>
+      <h5> <i class="material-icons">school</i> Add any school, bootcamp, etc that you have attended</h5>
     </div>
+    <br>
+    <div class="section">
+      <div class="container">
+        <span class="lead c2">* = required field</span>
       </div>
-      <!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js">
+      <form onSubmit={e=> handleSubmit(e)}>
+        <div class="row">
+          <div class="input-field col xs12 s12 m4 offset-m1 offset-l2 white-text">
+            <input id="school" type="text" class="" name="school" value={school} onChange={e=> handleChange(e)} required
+            />
+            <label for="school">School/Bootcaamp</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12 m4 offset-m1 offset-l2 white-text">
+            <input id="deg" type="text" class="active" name="degree" value={degree} onChange={e=> handleChange(e)}
+            required />
+            <label for="deg">Degree/Certificate</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col xs12 s12 m4 offset-m1 offset-l2 white-text">
+            <input id="fos" type="text" class="" name="fieldofstudy" value={fieldofstudy} onChange={e=>
+            handleChange(e)}/ >
+            <label for="fos">Field Of Study</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col xs12 s12 m3 l2 offset-l2">
+            <i class="material-icons prefix">date_range</i>
+            <input type="text" id="date" class="datepicker" name="from" value={from} onChange={e=> handleChange(e)} />
+            <label for="date">From Date</label>
+          </div>
+          <div class="input-field col xs12 s12 m3 l2">
+            <i class="material-icons prefix">date_range</i>
+            <input type="text" id="date1" class="datepicker" name="to" value={to} onChange={e=> handleChange(e)}
+            disabled={toDateDisabled ? 'disabled' : ''} />
+            <label for="date1">To Date</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col xs12 s12 m4 offset-m1 offset-l2">
+            <label>
+              <input type="checkbox" name="current" value="" checked={current} onChange={e=> {
+              setFormData({ ...formData, current: !current });
+              toggleDisabled(!toDateDisabled);
+              }} />
+              <span id="hu">Current School/Bootcamp</span>
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col xs12 s12 m4 offset-m1 offset-l2 white-text">
+            <textarea id="des" type="text" class="materialize-textarea" name="description" value={description}
+              onChange={e=> handleChange(e)}></textarea>
+            <label for="des">Program Description</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col xs6 s6 m4 offset-m1 offset-l2 white-text">
+            <button class="btn waves-effect waves-light purple darken-2" type="submit" name="action">Submit
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+          <div class="input-field col xs6 s6 m4 pull-m2">
+            <Link to="/dashboard" class="btn waves-effect white black-text">
+            <i class="fas fa-arrow-left"></i><span> Go Back</span>
+            </Link>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js">
       </script>
       <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js">
       </script>
       <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js">
       </script> -->
-    </body>
-    </html>
+</body>
+
+</html>

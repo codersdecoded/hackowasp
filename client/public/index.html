@@ -8,9 +8,42 @@
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="Web site created using create-react-app" />
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <script src="https://kit.fontawesome.com/c01912062f.js" crossorigin="anonymous"></script>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.slider').slider({
+        fullWidth: true,
+        indicators: false,
+        height: 500,
+        interval: 6000
+      });
+      $('.sidenav').sidenav();
+      $('.parallax').parallax();
+      $('.materialbox').materialbox();
+      $('.tabs').tabs();
+      $('.datepicker').datepicker({
+        disableWeekends: true
+      });
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy();
+      $('select').formSelect();
+      $(document).ready(function () {
+        $('.collapsible').collapsible();
+      });
+      $("#Button").click(function () {
+        $(this).toggleClass("my");
+      });
+    })
+  </script>
 
   <title>Welcome to dev connector</title>
 </head>

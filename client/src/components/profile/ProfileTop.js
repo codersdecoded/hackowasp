@@ -8,20 +8,20 @@ const ProfileTop = ({ profile: {
 
     return (
 
-        <div class="profile-top bg-primary p-2">
+        <div class="center indigo white-text" id="buf">
             <img
-                class="round-img my-1"
+                class="circle responsive-img"
                 src={avatar}
                 alt=""
             />
-            <h1 class="large">{name}</h1>
-            <p class="lead">{status} {company && <span>   at {company}</span>}  </p>
-            <p>{location && <span> {location}</span>}  </p>
+            <h2>{name}</h2>
+            <h5>{status} {company && <span> at {company}</span>} </h5>
+            <p>{location && <span> {location}</span>} </p>
 
 
 
 
-            <div class="icons my-1">
+            <div class="center">
 
                 {website && <a href={website} target="_blank" rel="noopener noreferrer">
                     <i class="fas fa-globe fa-2x"></i>
