@@ -15,13 +15,13 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
                 <div>
                     <section>
 
-                        <div class="container">
+                        <div class="">
                             <h2>Developers</h2>
                             <h4 id="supr"><i class="fab fa-connectdevelop"></i>Browse and connect with developers</h4>
                         </div>
                     </section>
                     <div class="section">
-                        <div class="container">
+                        <div class="">
 
                             <div class="profiles">
                                 {profiles.length > 0 ? (

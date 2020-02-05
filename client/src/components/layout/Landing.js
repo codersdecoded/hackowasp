@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, Redirect } from 'react-router-dom'
 import { connect } from 'react-redux'
+import slider1 from './images/slider1.jpg'; import slider2 from './images/slider2.jpg'; import slider3 from './images/slider3.jpg';
 
 const Landing = ({ isAuthenticated }) => {
     if (isAuthenticated) {
@@ -14,29 +15,29 @@ const Landing = ({ isAuthenticated }) => {
             <div className="slider">
                 <ul className="slides">
                     <li>
-                        <img src="./images/slider1.jpg" />
+                        <img src={slider1} />
                         <div className="caption center-align">
                             <h1>Creative</h1>
 
                             <h5 className="light grey-text text-lighten-3">Here's our small slogan.</h5>
 
-                            <a className=" white black-text waves-effect waves-light btn btn-large">GET STARTED</a>
+                            <Link to="/register" className=" white black-text waves-effect waves-light btn btn-large">GET STARTED</Link>
                         </div>
                     </li>
                     <li>
-                        <img src="./images/slider2.jpg" />
+                        <img src={slider2} />
                         <div className="caption left-align">
                             <h3>Left Aligned Caption</h3>
                             <h5 className="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                            <a className=" white black-text waves-effect waves-light btn btn-large">GET STARTED</a>
+                            <Link to="/register" className=" white black-text waves-effect waves-light btn btn-large">GET STARTED</Link>
                         </div>
                     </li>
                     <li>
-                        <img src="./images/slider3.jpg" />
+                        <img src={slider3} />
                         <div className="caption right-align">
                             <h3>Right Aligned Caption</h3>
                             <h5 className="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                            <a className=" white black-text waves-effect waves-light btn btn-large">GET STARTED</a>
+                            <Link to="/register" className=" white black-text waves-effect waves-light btn btn-large">GET STARTED</Link>
                         </div>
                     </li>
                 </ul>

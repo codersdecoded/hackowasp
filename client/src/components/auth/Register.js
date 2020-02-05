@@ -65,15 +65,16 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
                 </div>
                 <form onSubmit={(e) => handleSubmit(e)}>
                     <div className="row">
-                        <div className="col s6 l6 offset-l3">
+                        <div className="col s6 l8 offset-l2">
                             <div className="input-field">
+                                <i class="material-icons prefix">mood</i>
                                 <input type="text" id="fname" name="name" value={name} required onChange={(e) => handleChange(e)} />
                                 <label for="fname">Your  Name</label>
                             </div>
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col s12 l6 offset-l3">
+                        <div className="col s12 l8 offset-l2">
                             <form className="">
                                 <div className="input-field">
                                     <i className="material-icons prefix">email</i>
@@ -82,6 +83,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
                                     <span >This site uses Gravatar so if you want a profile image, use a Gravatar email</span>
                                 </div>
                                 <div className="input-field">
+                                    <i className="material-icons prefix">lock</i>
                                     <input type="password" id="pass" name="password"
                                         value={password}
                                         minLength="6"
@@ -90,6 +92,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
                                     <label for="pass">Password</label>
                                 </div>
                                 <div className="input-field">
+                                    <i className="material-icons prefix">lock</i>
                                     <input type="password" id="cpass" value={password2}
 
                                         name="password2"

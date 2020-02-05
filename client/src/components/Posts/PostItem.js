@@ -11,7 +11,7 @@ const PostItem = ({ auth, post: { _id, text, name, avatar, user, likes, comments
         <div>
             <Link to={`/profile/${user}`}>
                 <img
-                    className="round-img"
+                    className="circle"
                     src={avatar}
                     alt=""
                 />

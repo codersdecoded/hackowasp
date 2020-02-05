@@ -1,7 +1,8 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { a } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { logout } from '../../actions/authaction'
+import slider1 from './images/slider1.jpg'
 
 const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
 
@@ -10,24 +11,24 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
         <div>
             <li><div className="user-view">
                 <div className="background">
-                    <img src="" />
+                    <img src={slider1} className="responsive-img" />
                 </div>
                 <div className="exp"><i className="material-icons" id="person">person</i></div>
-                <Link href="#name"><span className="white-text name">John Doe</span></Link>
-                <Link href="#email"><span className="white-text email">jdandturk@gmail.com</span></Link>
+                <a href="#name"><span className="white-text name">John Doe</span></a>
+                <a href="#email"><span className="white-text email">jdandturk@gmail.com</span></a>
             </div></li>
             <ul className="collection" >
                 <li className="collection-item">
-                    <Link to="/dashboard"><i className="material-icons circle blue white-text" id="face">face</i> Dashboard</Link>
+                    <a href="/dashboard"><i className="material-icons circle blue white-text" id="face">face</i> Dashboard</a>
                 </li>
                 <li className="collection-item">
-                    <Link to="/profiles"><i className="material-icons circle blue white-text" id="face">people</i> Developers</Link>
+                    <a href="/profiles"><i className="material-icons circle blue white-text" id="face">people</i> Developers</a>
                 </li>
                 <li className="collection-item">
-                    <Link to='/posts'><i className="material-icons circle blue white-text" id="face">people</i>Posts</Link>
+                    <a href='/posts'><i className="material-icons circle blue white-text" id="face">people</i>Posts</a>
                 </li>
                 <li className="collection-item">
-                    <Link to='#' onClick={logout} >Logout</Link>
+                    <a href='#' onClick={logout} >Logout</a>
                 </li>
             </ul>
         </div>
@@ -35,18 +36,23 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
     );
     const guestLinks = (
         <div>
+            <li><div className="user-view">
+                <div className="background">
+                    <img src={slider1} className="responsive-img" />
+                </div>
+                <div className="exp"><i className="material-icons" id="person">person</i></div>
+                <a href="#name"><span className="white-text name">John Doe</span></a>
+                <a href="#email"><span className="white-text email">jdandturk@gmail.com</span></a>
+            </div></li>
             <ul className="collection" >
                 <li className="collection-item">
-                    <Link to="/dashboard"><i className="material-icons circle blue white-text" id="face">face</i> Dashboard</Link>
+                    <a href="/register"><i className="material-icons circle blue white-text" id="face">face</i>Sign Up</a>
                 </li>
                 <li className="collection-item">
-                    <Link to="/profiles"><i className="material-icons circle blue white-text" id="face">people</i> Developers</Link>
+                    <a href="/login"><i className="material-icons circle blue white-text" id="face">people</i>Login</a>
                 </li>
                 <li className="collection-item">
-                    <Link to='/posts'><i className="material-icons circle blue white-text" id="face">people</i>Posts</Link>
-                </li>
-                <li className="collection-item">
-                    <Link to='#' onClick={logout} >Logout</Link>
+                    <a href='/profiles'><i className="material-icons circle blue white-text" id="face">people</i>Developers</a>
                 </li>
             </ul>
 
@@ -59,10 +65,10 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
 
         <div>
 
-            <nav className="nav-wrapper white">
+            <nav className="nav-wrapper black white-text">
 
-                <Link to="/" className="brand-logo" id="nav-logo"><i className="fas fa-code"></i> Dev Connector</Link>
-                <Link to="#" data-target="slide-out" className="sidenav-trigger show-on-large right"><i className="material-icons">menu</i></Link>
+                <a href="/" className="brand-logo white-text" id="nav-logo"><i className="fas fa-code white-text"></i> Dev Connector</a>
+                <a href="#" data-target="slide-out" className="sidenav-trigger show-on-large right white-text"><i className="material-icons">menu</i></a>
             </nav>
             <ul id="slide-out" className="sidenav">
                 {!loading && (<div>{isAuthenticated ? (authLinks) : guestLinks}</div>)}
@@ -80,7 +86,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
 
         /* <nav classNameName="navbar bg-dark">
             <h1>
-                <Link to="/"><i classNameName="fas fa-code"></i> DevConnector</Link>
+                <a href="/"><i classNameName="fas fa-code"></i> DevConnector</a>
             </h1>
             {!loading && (<div>{isAuthenticated ? authLinks : guestLinks}</div>)}
         </nav> */

@@ -15,7 +15,7 @@ const ProfileGithub = ({ repos, getGithubRepos, username }) => {
     return (
         <div class="">
 
-            <div class="container">
+            <div class="">
 
                 <h3><i class="fab fa-github"></i>Github Repositories</h3>
 
@@ -25,7 +25,7 @@ const ProfileGithub = ({ repos, getGithubRepos, username }) => {
                     repos.map(repo => (
                         <div key={repo._id} class="row">
                             <div class="col s9 m9 l10">
-                                <h4><a href={repo.html_url} target="_blank"
+                                <h4 ><a class="black-text" href={repo.html_url} target="_blank"
                                     rel="noopener noreferrer">{repo.name}</a></h4>
                                 <p>
                                     {repo.description}
@@ -34,7 +34,7 @@ const ProfileGithub = ({ repos, getGithubRepos, username }) => {
                             <div class="col s3 m3 l2">
                                 <ul>
                                     <li class="badge blue white-text">Stars: {repo.stargazers_count}</li>
-                                    <li class="badge blue white-text">Watchers: {repo.watchers_count}</li>
+                                    <li class="badge black white-text">Watchers: {repo.watchers_count}</li>
                                     <li class="badge blue white-text">Forks: {repo.forks_count}</li>
                                 </ul>
                             </div>
